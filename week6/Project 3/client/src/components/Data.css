@@ -1,0 +1,30 @@
+.Data-Container {
+    background: rgba(73, 72, 72, 0.8);
+    border: 3px solid #03e8f43b;;
+    border-radius: 5px;
+    color: #fff;
+    font-family: "Oswald", sans;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5vh;
+    padding: 20px;
+    /* text-align: center; */
+    top: 500px;
+    width: 400px;
+    padding: 0px;
+    overflow-y: scroll;
+}
+.Data-Container::-webkit-scrollbar {
+    display: none;
+}
+.inner_data {
+    padding: 1.5em;
+    padding-top: 1.5em;
+    background: rgba(73, 72, 72, 0.8);
+    /* background: rgba(73, 72, 72, 0.05); */
+}
+hr {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}

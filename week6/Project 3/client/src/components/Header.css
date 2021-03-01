@@ -1,0 +1,14 @@
+.header {
+  text-align: center;
+  background: rgba(73, 72, 72, 0.8);
+  border-bottom: 3px solid #03e8f43b;
+  box-shadow: 0 15px 25px #03e8f45b;
+  color: #fff;
+  font-family: "Oswald", sans;
+  font-size: 2rem;
+  margin: 0;
+  padding: 20px;
+}
+.inner_header {
+  background: rgba(73, 72, 72, 0.05);
+}

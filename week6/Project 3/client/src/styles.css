@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Oswald:300,400,700");
+
+html,
+body,
+* {
+  margin: 0;
+  padding: 0;
+  background-attachment: fixed;
+  background-color: gray;
+  background-image: url("./images/avengersBackground.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  /* overflow: hidden; */
+}
