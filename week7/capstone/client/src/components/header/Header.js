@@ -1,11 +1,29 @@
-import React from "react"
+import React from "react";
+import { Link, useLocation } from "react-router-dom";
+import "./Header.css";
 
 const Header = () => {
-    return (
-        <header>
+  const location = useLocation();
+  return (
+    <div className="header">
+      {location.pathname === "/dc" ? (
+        // onClick={() => setToggle(true)}
+        <div>
+          <Link path to="/avengers" className="inner_header">
+            <h1>DC superheroes</h1>
+          </Link>
+          <h5 className="header_info">Click title for Avengers Database</h5>
+        </div>
+      ) : (
+        <div>
+          <Link path to="/dc" className="inner_header">
+            <h1>Avengers</h1>
+          </Link>
+          <h5 className="header_info">Click title for DC Database</h5>
+        </div>
+      )}
+    </div>
+  );
+};
 
-        </header>
-    )
-}
-
-export default Header
+export default Header;

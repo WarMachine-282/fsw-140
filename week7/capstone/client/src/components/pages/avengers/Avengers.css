@@ -1,0 +1,43 @@
+.Data-Container {
+  background: rgba(255, 255, 255, 0.274);
+  border: 3px solid rgb(0, 0, 0);
+  border-radius: 1em;
+  color: rgb(0, 0, 0);
+  font-family: 'Comic Neue', cursive;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5vh;
+  /* padding: 20px; */
+  /* text-align: center; */
+  top: 500px;
+  width: 400px;
+  padding: 0px;
+  overflow-y: scroll;
+}
+.Data-Container::-webkit-scrollbar {
+  display: none;
+}
+.inner_data_title {
+  /* padding: 1.5em; */
+  /* padding-top: 1.5em; */
+  background: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  font-size: 30px;
+}
+.inner_data {
+  border-bottom: 1.5px solid rgb(0, 0, 0);
+  padding: 1.5em;
+  padding-top: 1.5em;
+  background: rgb(255, 255, 255, 0.8);
+  text-align: center;
+}
+.av_bg {
+    background-image: url("../../images/marvel_heroes3.jpg");
+    background-color: gray;
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}

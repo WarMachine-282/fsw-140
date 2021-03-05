@@ -1,17 +1,27 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Page1 from "./components/pages/page1/";
-import Page2 from "./components/pages/page2/";
-import Page3 from "./components/pages/page3/";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Redirect,
+} from "react-router-dom";
+import Avengers from "./components/pages/avengers/Avengers";
+import Dc from "./components/pages/dc_heroes/Dc";
+import Heroes from "./components/pages/heroes/Heroes"
+// import Footer from "./components/footer/Footer";
+import "./styles.css";
 
 function App() {
   return (
     <div className="app">
       <Router>
         <Switch>
-          <Route exact path to={Page1} />
-          <Route path to={Page2} />
-          <Route path to={Page3} />
+          <Route exact path="/">
+            {<Redirect to="/avengers" />}
+          </Route>
+          <Route path="/dc" component={Dc} redirectTo="/" />
+          <Route path="/avengers" component={Avengers} redirectTo="/" />
+          <Route path="/heroes" component={Heroes} redirectTo="/" />
         </Switch>
       </Router>
     </div>
