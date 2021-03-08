@@ -1,7 +1,7 @@
 import React, { useContext, useEffect } from "react";
 import { UserContext } from "../../context/DataProvider";
-import Header from "../../header/Header"
-import Footer from "../../footer/Footer"
+import Header from "../../header/Header";
+import Footer from "../../footer/Footer";
 import AvengersData from "./AvengersData";
 
 function Avengers() {
@@ -13,7 +13,7 @@ function Avengers() {
 
   return (
     <div className="av_bg">
-      <Header/>
+      <Header />
       {dataState ? (
         <div>
           {dataState.map((avenger) => (
@@ -22,7 +22,7 @@ function Avengers() {
           {console.log(dataState)}
         </div>
       ) : (
-        <h2>Loading...</h2>
+        <h2 className="inner_data">Loading...</h2>
       )}
       <Footer />
     </div>

@@ -22,7 +22,7 @@ function Dc() {
           {console.log(dataState)}
         </div>
       ) : (
-        <h2>Loading...</h2>
+        <h2 className="inner_data">Loading...</h2>
       )}
       <Footer />
     </div>

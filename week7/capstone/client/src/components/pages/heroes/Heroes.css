@@ -1,50 +1,101 @@
+.hero_bg {
+  background-attachment: fixed;
+  background-color: gray;
+  background-image: url("../../images/hero_mix.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+/* HEADER  */
 .hero_head {
-    text-align: center;
-    background: rgb(0, 0, 0);
-    border-bottom: 3px solid rgb(80, 183, 209);
-    box-shadow: 0 15px 25px rgb(80, 183, 209);
-    color: rgb(255, 255, 255);
-    font-family: 'Comic Neue', cursive;
-    font-size: 2rem;
-    margin: 0;
-    padding: 20px;
+  text-align: center;
+  background: rgb(0, 0, 0);
+  border-bottom: 3px solid rgb(80, 183, 209);
+  box-shadow: 0 15px 25px rgb(80, 183, 209);
+  color: rgb(255, 255, 255);
+  font-family: "Comic Neue", cursive;
+  font-size: 2rem;
+  margin: 0;
+  padding: 20px;
 }
 .inner_hero_head {
-    background: rgb(0, 0, 0);
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-  }
-.hero_head_info {
-    background: rgb(0, 0, 0);
-    font-size: 10px;
-    padding: 1.5em;
+  background: rgb(0, 0, 0);
+  text-decoration: none;
+  color: rgb(255, 255, 255);
 }
+.hero_head_info {
+  background: rgb(0, 0, 0);
+  font-size: 10px;
+  padding: 1.5em;
+}
+.back_link {
+  text-decoration: none;
+  color: rgb(80, 183, 209);
+}
+/* CONTENT  */
 .Hero-Container {
-    background: rgba(255, 255, 255, 0.274);
-    border: 3px solid rgb(0, 0, 0);
-    border-radius: 1em;
-    color: rgb(0, 0, 0);
-    font-family: 'Comic Neue', cursive;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 5vh;
-    /* padding: 20px; */
-    /* text-align: center; */
-    top: 500px;
-    width: 400px;
-    padding: 0px;
-    overflow-y: scroll;
-  }
-  .Data-Container::-webkit-scrollbar {
-    display: none;
-  }
-  .hero_bg {
-    background-attachment: fixed;
-    background-color: gray;
-    background-image: url("../../images/hero_mix.jpg");
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: 0;
-    padding: 0;
-  }
+  background: rgba(255, 255, 255, 0.274);
+  border: 3px solid rgb(0, 0, 0);
+  border-radius: 1em;
+  color: rgb(0, 0, 0);
+  font-family: "Comic Neue", cursive;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5vh;
+  top: 500px;
+  width: 400px;
+  padding: 0px;
+}
+.inner_hero_title_top {
+  background: rgba(255, 255, 255, 0.8);
+  border-top-left-radius: 0.4em;
+  border-top-right-radius: 0.4em;
+  text-align: center;
+  font-size: 30px;
+}
+.inner_hero_title {
+  background: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  font-size: 30px;
+}
+.inner_hero_data {
+  border-bottom: 1.5px solid rgb(0, 0, 0);
+  padding: 1.5em;
+  padding-top: 1.5em;
+  background: rgb(255, 255, 255, 0.8);
+  text-align: center;
+}
+.inner_hero_data_btm {
+  border-bottom: 1.5px solid rgb(0, 0, 0);
+  border-bottom-left-radius: 0.7em;
+  border-bottom-right-radius: 0.7em;
+  padding: 1.5em;
+  padding-top: 1.5em;
+  background: rgb(255, 255, 255, 0.8);
+  text-align: center;
+}
+/* FORM  */
+.inner_hero_input {
+  border: 0ch;
+  border-bottom: 1.5px solid rgb(0, 0, 0);
+  padding-bottom: 2em;
+  padding-top: 2em;
+  background: rgb(255, 255, 255, 0.8);
+  outline: none;
+  text-align: center;
+  width: 400px;
+}
+.inner_hero_input_btm {
+  border: 0ch;
+  border-bottom: 1.5px solid rgb(0, 0, 0);
+  border-bottom-left-radius: 0.7em;
+  border-bottom-right-radius: 0.7em;
+  padding-bottom: 2em;
+  padding-top: 2em;
+  background: rgb(255, 255, 255, 0.8);
+  outline: none;
+  text-align: center;
+  width: 400px;
+}

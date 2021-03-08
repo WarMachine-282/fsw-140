@@ -1,22 +1,25 @@
 .header {
-    text-align: center;
-    background: rgb(0, 0, 0);
-    border-bottom: 3px solid rgb(80, 183, 209);
-    box-shadow: 0 15px 25px rgb(80, 183, 209);
-    color: rgb(255, 255, 255);
-    font-family: 'Comic Neue', cursive;
-    font-size: 2rem;
-    margin: 0;
-    padding: 20px;
-  }
-  .inner_header {
-    background: rgb(0, 0, 0);
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-  }
-  .header_info {
-    background: rgb(0, 0, 0);
-    font-size: 10px;
-    padding: 1.5em;
-  }
-  
+  text-align: center;
+  background: rgb(0, 0, 0);
+  border-bottom: 3px solid rgb(80, 183, 209);
+  box-shadow: 0 15px 25px rgb(80, 183, 209);
+  color: rgb(255, 255, 255);
+  font-family: "Comic Neue", cursive;
+  font-size: 2rem;
+  margin: 0;
+  padding: 20px;
+}
+.inner_header {
+  background: rgb(0, 0, 0);
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+.header_info {
+  background: rgb(0, 0, 0);
+  font-size: 10px;
+  padding: 1.5em;
+}
+.heroes_link {
+  text-decoration: none;
+  color: rgb(80, 183, 209);
+}

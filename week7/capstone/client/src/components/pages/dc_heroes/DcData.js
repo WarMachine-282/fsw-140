@@ -13,7 +13,7 @@ const DcData = (props) => {
       <p className="inner_data">{year}</p>
       <p className="inner_data_title">Duration</p>
       <p className="inner_data">{yearsSinceJoining}YRS.</p>
-      <p className="inner_data_title">Dead?</p>
+      <p className="inner_data_title">Alive?</p>
       <p className="inner_data">{alive}</p>
     </div>
   );

@@ -1,11 +1,12 @@
 import React, { useContext, useEffect } from "react";
 import { UserContext } from "../../context/DataProvider";
 import HeroHead from "./HeroHead";
-import Footer from "../../footer/Footer";
+import HeroForm from "./HeroForm"
 import HeroesData from "./HeroesData";
+import Footer from "../../footer/Footer";
 
 function Heroes() {
-  const { getHeroData, dataState } = useContext(UserContext);
+  const { getHeroData, dataState, heroPost } = useContext(UserContext);
 
   useEffect(() => {
     getHeroData();
@@ -13,24 +14,9 @@ function Heroes() {
 
   return (
     <div className="hero_bg">
-      <HeroHead/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>      <br/>
-      <br/>
-      <br/>
-      <br/>      <br/>
-      <br/>
-      <br/>
-      <br/>      <br/>
-      <br/>
-      <br/>
-      <br/>      <br/>
-      <br/>
-      <br/>
-      <br/>
-
+      <HeroHead />
+      <HeroForm
+          heroPost={heroPost}/>
       {dataState ? (
         <div>
           {dataState.map((hero) => (
@@ -39,7 +25,7 @@ function Heroes() {
           {console.log(dataState)}
         </div>
       ) : (
-        <h2>Loading...</h2>
+        <h2 className="inner_hero_input">Loading...</h2>
       )}
       <Footer />
     </div>

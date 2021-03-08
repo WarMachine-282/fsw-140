@@ -3,7 +3,6 @@ const mysql = require("mysql");
 const morgan = require("morgan");
 const app = express();
 
-
 app.use(express.json());
 app.use(morgan("dev"));
 
@@ -23,7 +22,7 @@ db.connect((err) => {
   console.log("MySQL Database Connection Established Successfully!");
 });
 
-// DISPLAY DATA FROM TABLES----------------------------------------------------------------------------------------- 
+// DISPLAY DATA FROM TABLES-----------------------------------------------------------------------------------------
 app.get("/avengers_tbl", (req, res) => {
   let sql =
     "SELECT name, gender, year, yearsSinceJoining, alive FROM avengers_tbl LIMIT 20";
@@ -57,7 +56,23 @@ app.get("/heroes", (req, res) => {
   });
 });
 
-
+// POST
+app.post("/heroes", (req, res) => {
+  const { name, gender, year, yearsSinceJoining, alive } = req.body;
+  let sql = `INSERT INTO heroes (name, gender, year, yearsSinceJoining, alive) VALUES ("${name}","${gender}","${year}","${yearsSinceJoining}","${alive}")`;
+  let query = db.query(sql, req.body, (err, res) => {
+    if (err) {
+      throw err
+    }
+    let displayHeroes = `SELECT * FROM heroes LIMIT 1;`
+    db.query(displayHeroes, (err, res) => {
+      if (err) {
+        throw err
+      }
+      res.send(res)
+    })
+  })
+});
 
 // --------------------------------------------------------------------------------------------------------------------
 app.listen(9000, () => {
