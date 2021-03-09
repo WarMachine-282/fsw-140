@@ -3,7 +3,7 @@ import axios from "axios";
 export const UserContext = React.createContext();
 
 export default function DataProvider(props) {
-  const [dataState, setDataState] = useState();
+  const [dataState, setDataState] = useState([]);
 
   const getAvengerData = () => {
     axios
@@ -27,18 +27,18 @@ export default function DataProvider(props) {
   const getHeroData = () => {
     axios
       .get("/heroes")
-      .then((res) => {
+      .then(res => {
         setDataState(res.data);
       })
-      .catch((err) => console.log(err));
+      .catch(err => console.log(err));
   };
   const heroPost = (newHero) => {
     axios
       .post("/heroes", newHero)
-      .then((res) => {
-        setDataState((prevState) => [...prevState, res.data]);
+      .then(res => {
+        setDataState(prevState => [...prevState, res.data]);
       })
-      .catch((err) => console.log(err));
+      .catch(err => console.log(err));
       getHeroData();
   };
 

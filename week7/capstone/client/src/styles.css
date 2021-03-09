@@ -35,3 +35,8 @@ body,
   background: rgb(255, 255, 255, 0.8);
   text-align: center;
 }
+@media screen and (max-width: 600px) {
+  .Data-Container {
+    width: 200px;
+  }
+}

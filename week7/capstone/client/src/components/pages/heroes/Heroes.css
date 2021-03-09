@@ -87,15 +87,20 @@
   text-align: center;
   width: 400px;
 }
-.inner_hero_input_btm {
-  border: 0ch;
-  border-bottom: 1.5px solid rgb(0, 0, 0);
-  border-bottom-left-radius: 0.7em;
-  border-bottom-right-radius: 0.7em;
-  padding-bottom: 2em;
-  padding-top: 2em;
-  background: rgb(255, 255, 255, 0.8);
-  outline: none;
-  text-align: center;
+.btn {
+  border-bottom-left-radius: 1em;
+  border-bottom-right-radius: 1em;
   width: 400px;
+  padding-top: 0.2em;
+}
+@media screen and (max-width: 600px) {
+  .Hero-Container {
+    width: 200px;
+  }
+  .inner_hero_input {
+    width: 200px;
+  }
+  .btn {
+    width: 200px;
+  }
 }

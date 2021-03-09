@@ -22,16 +22,10 @@ const HeroForm = (props) => {
     e.preventDefault();
     heroPost(inputs);
   };
-
-  const key = (event) => {
-    if (event.keyCode === 13) {
-      console.log("enter");
-    }
-  };
-
+  
   return (
     <div className="Hero-Container">
-      <form onSubmit={handleSubmit} onKeyDown={(e) => key(e)}>
+      <form onSubmit={handleSubmit} >
         <p className="inner_hero_title_top">Name</p>
         <input
           id="name"
@@ -54,7 +48,7 @@ const HeroForm = (props) => {
         />
         <p className="inner_hero_title">Year Started</p>
         <input
-          maxlength="4"
+          maxLength="4"
           id="year"
           name="year"
           value={inputs.year}
@@ -65,7 +59,7 @@ const HeroForm = (props) => {
         />
         <p className="inner_hero_title">Duration</p>
         <input
-          maxlength="4"
+          maxLength="4"
           id="yearsSinceJoining"
           name="yearsSinceJoining"
           value={inputs.yearsSinceJoining}
@@ -76,17 +70,17 @@ const HeroForm = (props) => {
         />
         <p className="inner_hero_title">Alive?</p>
         <input
-          maxlength="3"
+          maxLength="3"
           id="alive"
           name="alive"
           value={inputs.alive}
           onChange={handleChange}
           type="text"
-          className="inner_hero_input_btm"
+          className="inner_hero_input"
           placeholder="enter to submit"
         />
         <div>
-          <button>Submit</button>
+          <button className="btn">Submit</button>
         </div>
       </form>
     </div>
